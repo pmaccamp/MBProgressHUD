@@ -263,6 +263,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// @name ProgressObject
 
+
 /**
  * The NSProgress object feeding the progress information to the progress indicator.
  */
