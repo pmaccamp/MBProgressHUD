@@ -41,7 +41,6 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
 @property (nonatomic, strong) UIView *bottomSpacer;
 @property (nonatomic, weak) NSTimer *graceTimer;
 @property (nonatomic, weak) NSTimer *minShowTimer;
-@property (nonatomic, weak) NSTimer *maxShowTimer;
 @property (nonatomic, weak) NSTimer *hideDelayTimer;
 @property (nonatomic, weak) CADisplayLink *progressObjectDisplayLink;
 
@@ -767,7 +766,7 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
 - (void)unregisterFromNotifications {
 #if !TARGET_OS_TV
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-    [nc removeObserver:self name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+    [nc removeObserver:self];
 #endif
 }
 

@@ -303,6 +303,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (strong, nonatomic, readonly) UIButton *button;
 
+/**
+* Timer to control maximum time to show hud
+*/
+@property (nonatomic, weak) NSTimer *maxShowTimer;
+
 @end
 
 
